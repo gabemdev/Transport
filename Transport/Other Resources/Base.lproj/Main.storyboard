@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F43c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="b0b-PK-n8e">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wcX-kL-4Lf">
+            <objects>
+                <viewController id="5Ns-7r-5wf" customClass="ViewController" customModule="MappingGabe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zQD-al-enm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uy8-4w-XDG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lth-qb-vhG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fH3-WB-RRD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="527"/>
+                                <connections>
+                                    <outlet property="delegate" destination="5Ns-7r-5wf" id="L86-aC-2Em"/>
+                                </connections>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZf-sE-VrW">
+                                <rect key="frame" x="0.0" y="547" width="375" height="120"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rff-K3-q0S" customClass="CustomTabBar" customModule="MappingGabe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="60" width="375" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="TW7-8Y-riQ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="inactiveColor">
+                                                <color key="value" red="0.79047930240631104" green="0.80531191825866699" blue="0.87086194753646851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectorTintColor">
+                                                <color key="value" red="0.48019713163375854" green="0.56281650066375732" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTintColor">
+                                                <color key="value" red="0.48019713163375854" green="0.56281650066375732" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="selectorWidth">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Where to go?" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xmS-PE-n1T">
+                                        <rect key="frame" x="12" y="8" width="351" height="48"/>
+                                        <color key="backgroundColor" red="0.98435062170028687" green="0.98833721876144409" blue="0.98817044496536255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.48019713159999999" green="0.5628165007" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="FNT-nN-nM8"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.58401006460189819" green="0.60367637872695923" blue="0.70421606302261353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qof-D0-NHh" customClass="FloatingActionButton" customModule="MappingGabe" customModuleProvider="target">
+                                        <rect key="frame" x="157.5" y="30" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.48019713159999999" green="0.5628165007" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Z5s-w4-yfv"/>
+                                            <constraint firstAttribute="width" constant="60" id="qNE-gr-hRF"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="fab-icon"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" red="0.58401006460000005" green="0.60367637870000002" blue="0.70421606299999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="-1" height="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.58401006460000005" green="0.60367637870000002" blue="0.70421606299999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onCenterButtonTapped:" destination="5Ns-7r-5wf" eventType="touchUpInside" id="Kjq-GQ-dhf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rff-K3-q0S" secondAttribute="trailing" id="1Yh-YR-0ZV"/>
+                                    <constraint firstAttribute="bottom" secondItem="rff-K3-q0S" secondAttribute="bottom" id="9XX-DN-cjN"/>
+                                    <constraint firstAttribute="trailing" secondItem="xmS-PE-n1T" secondAttribute="trailing" constant="12" id="Aqg-x5-a5m"/>
+                                    <constraint firstItem="xmS-PE-n1T" firstAttribute="top" secondItem="fZf-sE-VrW" secondAttribute="top" constant="8" id="DDR-Nx-LVd"/>
+                                    <constraint firstItem="xmS-PE-n1T" firstAttribute="leading" secondItem="fZf-sE-VrW" secondAttribute="leading" constant="12" id="DJG-so-2aA"/>
+                                    <constraint firstItem="rff-K3-q0S" firstAttribute="leading" secondItem="fZf-sE-VrW" secondAttribute="leading" id="HUh-XU-WG4"/>
+                                    <constraint firstAttribute="height" constant="120" id="a38-c6-uUr"/>
+                                    <constraint firstItem="Qof-D0-NHh" firstAttribute="centerX" secondItem="fZf-sE-VrW" secondAttribute="centerX" id="a8v-b0-72a"/>
+                                    <constraint firstAttribute="trailing" secondItem="rff-K3-q0S" secondAttribute="trailing" id="wEe-Kj-D3y"/>
+                                    <constraint firstItem="Qof-D0-NHh" firstAttribute="bottom" secondItem="rff-K3-q0S" secondAttribute="centerY" id="wbG-9a-EWn"/>
+                                    <constraint firstItem="rff-K3-q0S" firstAttribute="leading" secondItem="fZf-sE-VrW" secondAttribute="leading" id="wva-nk-2Qa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fH3-WB-RRD" firstAttribute="leading" secondItem="lth-qb-vhG" secondAttribute="leading" id="AsD-GY-Iqa"/>
+                            <constraint firstItem="Uy8-4w-XDG" firstAttribute="top" secondItem="fZf-sE-VrW" secondAttribute="bottom" id="Pw7-uj-EXP"/>
+                            <constraint firstItem="fZf-sE-VrW" firstAttribute="top" secondItem="fH3-WB-RRD" secondAttribute="bottom" id="VSn-PV-mn7"/>
+                            <constraint firstItem="fZf-sE-VrW" firstAttribute="leading" secondItem="lth-qb-vhG" secondAttribute="leading" id="b4z-gJ-aRu"/>
+                            <constraint firstAttribute="trailing" secondItem="fZf-sE-VrW" secondAttribute="trailing" id="kBI-ue-0CY"/>
+                            <constraint firstAttribute="trailing" secondItem="fH3-WB-RRD" secondAttribute="trailing" id="kZ9-eL-4J0"/>
+                            <constraint firstItem="fH3-WB-RRD" firstAttribute="top" secondItem="lth-qb-vhG" secondAttribute="top" constant="20" id="mcY-Bw-JmQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hyy-bp-88m">
+                        <barButtonItem key="rightBarButtonItem" image="news-icon" id="eBe-Uf-C58">
+                            <color key="tintColor" red="0.26274509800000001" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="onNewsButtonTapped:" destination="5Ns-7r-5wf" id="Ii8-cO-4cy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="containerView" destination="fZf-sE-VrW" id="a0w-BA-SNh"/>
+                        <outlet property="customTabBar" destination="rff-K3-q0S" id="oeI-GH-v29"/>
+                        <outlet property="mapView" destination="fH3-WB-RRD" id="Z72-2I-W9i"/>
+                        <outlet property="newsBarButtonItem" destination="eBe-Uf-C58" id="nOJ-65-dh4"/>
+                        <outlet property="searchBar" destination="xmS-PE-n1T" id="HaQ-h2-35V"/>
+                        <segue destination="caP-RW-fdg" kind="presentation" identifier="LocationViewController" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="VpF-F2-SOn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Avx-GC-MNX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1360.8" y="91.304347826086968"/>
+        </scene>
+        <!--Location-->
+        <scene sceneID="v7L-8x-92A">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Location" id="caP-RW-fdg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gt3-ml-ABp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2137.5999999999999" y="98.950524737631198"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kqk-YG-L9F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b0b-PK-n8e" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="0bR-2H-7TX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Ns-7r-5wf" kind="relationship" relationship="rootViewController" id="aWk-Le-eBQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hqF-bh-7yE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421.60000000000002" y="91.304347826086968"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fab-icon" width="60" height="60"/>
+        <image name="news-icon" width="24" height="24"/>
+    </resources>
+</document>

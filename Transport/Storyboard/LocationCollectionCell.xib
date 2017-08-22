@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F43c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LocationCollectionCell" id="RJB-dh-QoC" customClass="LocationCollectionCell" customModule="MappingGabe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="464"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="464"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4N-nE-DsA" userLabel="ContentView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="464"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Get student discount every wednesday" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGu-rf-ECh">
+                                <rect key="frame" x="30" y="240" width="315" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="gSx-Sj-u4N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                <color key="textColor" red="0.2627450980392157" green="0.28627450980392155" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 3" translatesAutoresizingMaskIntoConstraints="NO" id="gFo-cg-mcj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Lgb-F8-fMe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Apr 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ega-O9-1EK">
+                                <rect key="frame" x="30" y="220" width="315" height="16"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="12"/>
+                                <color key="textColor" red="0.2627450980392157" green="0.28627450980392155" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2k-a7-Ozo">
+                                <rect key="frame" x="0.0" y="420" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.46961492300000002" green="0.55006331210000003" blue="0.96918958430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="954-sp-z8S"/>
+                                </constraints>
+                                <state key="normal" title="        read more">
+                                    <color key="titleColor" red="0.98811608549999996" green="0.98822385069999996" blue="0.99219971900000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onMoreInfoButtonTapped:" destination="RJB-dh-QoC" eventType="touchUpInside" id="mGx-GR-z3B"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnM-aa-efu">
+                                <rect key="frame" x="30" y="298" width="315" height="122"/>
+                                <string key="text">Every large design company whether it’s a multi-national branding corporation or a regular down at heel tatty magazine publisher needs to fill holes in the workforce.</string>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                <color key="textColor" red="0.76078431372549016" green="0.77647058823529413" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I2k-a7-Ozo" firstAttribute="leading" secondItem="Z4N-nE-DsA" secondAttribute="leading" id="08J-QA-mEx"/>
+                            <constraint firstAttribute="trailing" secondItem="I2k-a7-Ozo" secondAttribute="trailing" id="Ad7-Bb-o21"/>
+                            <constraint firstAttribute="trailing" secondItem="SnM-aa-efu" secondAttribute="trailing" constant="30" id="E8c-fH-iFb"/>
+                            <constraint firstItem="Ega-O9-1EK" firstAttribute="top" secondItem="gFo-cg-mcj" secondAttribute="bottom" constant="20" id="Eaw-X6-0Qv"/>
+                            <constraint firstAttribute="trailing" secondItem="gFo-cg-mcj" secondAttribute="trailing" id="HDQ-Bz-isl"/>
+                            <constraint firstItem="gFo-cg-mcj" firstAttribute="top" secondItem="Z4N-nE-DsA" secondAttribute="top" id="QG5-ML-yiV"/>
+                            <constraint firstItem="SnM-aa-efu" firstAttribute="top" secondItem="fGu-rf-ECh" secondAttribute="bottom" constant="10" id="Thk-VS-8xm"/>
+                            <constraint firstItem="Ega-O9-1EK" firstAttribute="leading" secondItem="Z4N-nE-DsA" secondAttribute="leading" constant="30" id="WmQ-Wr-yCT"/>
+                            <constraint firstAttribute="trailing" secondItem="Ega-O9-1EK" secondAttribute="trailing" constant="30" id="Z4F-ut-y51"/>
+                            <constraint firstItem="gFo-cg-mcj" firstAttribute="leading" secondItem="Z4N-nE-DsA" secondAttribute="leading" id="bA1-ZM-5rA"/>
+                            <constraint firstAttribute="trailing" secondItem="fGu-rf-ECh" secondAttribute="trailing" constant="30" id="h0O-Gw-9Yp"/>
+                            <constraint firstAttribute="bottom" secondItem="I2k-a7-Ozo" secondAttribute="bottom" id="n2x-F9-G1i"/>
+                            <constraint firstItem="I2k-a7-Ozo" firstAttribute="top" secondItem="SnM-aa-efu" secondAttribute="bottom" id="qpp-4n-Jd8"/>
+                            <constraint firstItem="fGu-rf-ECh" firstAttribute="leading" secondItem="Z4N-nE-DsA" secondAttribute="leading" constant="30" id="saI-7H-mH6"/>
+                            <constraint firstItem="SnM-aa-efu" firstAttribute="leading" secondItem="Z4N-nE-DsA" secondAttribute="leading" constant="30" id="wca-MP-WAU"/>
+                            <constraint firstItem="fGu-rf-ECh" firstAttribute="top" secondItem="Ega-O9-1EK" secondAttribute="bottom" constant="4" id="yvF-Jg-S3H"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Z4N-nE-DsA" secondAttribute="bottom" id="1no-qH-GFT"/>
+                <constraint firstAttribute="trailing" secondItem="Z4N-nE-DsA" secondAttribute="trailing" id="3wN-gR-sds"/>
+                <constraint firstItem="Z4N-nE-DsA" firstAttribute="top" secondItem="RJB-dh-QoC" secondAttribute="top" id="AQh-vG-u5j"/>
+                <constraint firstItem="Z4N-nE-DsA" firstAttribute="leading" secondItem="RJB-dh-QoC" secondAttribute="leading" id="qZ1-K8-eMz"/>
+            </constraints>
+            <size key="customSize" width="375" height="125"/>
+            <connections>
+                <outlet property="dateLabel" destination="Ega-O9-1EK" id="OaL-pr-ROd"/>
+                <outlet property="descriptionLabel" destination="SnM-aa-efu" id="MHH-cg-DPG"/>
+                <outlet property="locationImageView" destination="gFo-cg-mcj" id="UWr-la-KfM"/>
+                <outlet property="titleLabel" destination="fGu-rf-ECh" id="mx4-iX-XZ2"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle 3" width="375" height="200"/>
+    </resources>
+</document>

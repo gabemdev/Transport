@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F43c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LocationAnnouncementCell" id="wHJ-bb-hvg" customClass="LocationAnnouncementCell" customModule="MappingGabe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="264"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="264"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Kt-mA-m40" userLabel="ContentView">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="264"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Apr 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zO-3c-zfv">
+                                <rect key="frame" x="30" y="20" width="275" height="16"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Get student discount every wednesday" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5K-Vl-c06">
+                                <rect key="frame" x="30" y="42" width="275" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="xLk-nk-mhe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAO-P5-Nbu">
+                                <rect key="frame" x="0.0" y="220" width="335" height="44"/>
+                                <color key="backgroundColor" red="0.47058823529411764" green="0.5490196078431373" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Kfu-H0-VDs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                <state key="normal" title="       Read mode">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onMoreInfoButtonTapped:" destination="wHJ-bb-hvg" eventType="touchUpInside" id="Pmh-wl-q9B"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJ7-ct-rmw">
+                                <rect key="frame" x="30" y="100" width="275" height="110"/>
+                                <string key="text">Every large design company whether it’s a multi-national branding corporation or a regular down at heel tatty magazine publisher needs to fill holes in the workforce.</string>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="8zO-3c-zfv" firstAttribute="top" secondItem="4Kt-mA-m40" secondAttribute="top" constant="20" id="025-DN-XGQ"/>
+                            <constraint firstItem="oJ7-ct-rmw" firstAttribute="leading" secondItem="4Kt-mA-m40" secondAttribute="leading" constant="30" id="1lj-jD-rxv"/>
+                            <constraint firstItem="KAO-P5-Nbu" firstAttribute="leading" secondItem="4Kt-mA-m40" secondAttribute="leading" id="6R3-HI-FGz"/>
+                            <constraint firstItem="8zO-3c-zfv" firstAttribute="leading" secondItem="4Kt-mA-m40" secondAttribute="leading" constant="30" id="84A-ji-VnA"/>
+                            <constraint firstItem="j5K-Vl-c06" firstAttribute="top" secondItem="8zO-3c-zfv" secondAttribute="bottom" constant="6" id="ElE-02-OgD"/>
+                            <constraint firstItem="oJ7-ct-rmw" firstAttribute="top" secondItem="j5K-Vl-c06" secondAttribute="bottom" constant="10" id="NIF-Mc-pjz"/>
+                            <constraint firstAttribute="bottom" secondItem="KAO-P5-Nbu" secondAttribute="bottom" id="SVJ-MW-jbi"/>
+                            <constraint firstAttribute="trailing" secondItem="KAO-P5-Nbu" secondAttribute="trailing" id="TUl-XI-toV"/>
+                            <constraint firstItem="j5K-Vl-c06" firstAttribute="leading" secondItem="4Kt-mA-m40" secondAttribute="leading" constant="30" id="bYo-kh-qQg"/>
+                            <constraint firstAttribute="trailing" secondItem="oJ7-ct-rmw" secondAttribute="trailing" constant="30" id="ceA-Zk-0xa"/>
+                            <constraint firstAttribute="trailing" secondItem="j5K-Vl-c06" secondAttribute="trailing" constant="30" id="qsx-s3-xqb"/>
+                            <constraint firstItem="KAO-P5-Nbu" firstAttribute="top" secondItem="oJ7-ct-rmw" secondAttribute="bottom" constant="10" id="tzU-ob-VOi"/>
+                            <constraint firstAttribute="trailing" secondItem="8zO-3c-zfv" secondAttribute="trailing" constant="30" id="wZK-Rc-1Fy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4Kt-mA-m40" secondAttribute="trailing" id="NCg-IG-JTi"/>
+                <constraint firstItem="4Kt-mA-m40" firstAttribute="top" secondItem="wHJ-bb-hvg" secondAttribute="top" id="O8V-Ac-ATc"/>
+                <constraint firstItem="4Kt-mA-m40" firstAttribute="leading" secondItem="wHJ-bb-hvg" secondAttribute="leading" id="i8o-IV-aQ6"/>
+                <constraint firstAttribute="bottom" secondItem="4Kt-mA-m40" secondAttribute="bottom" id="tTa-nv-dX1"/>
+            </constraints>
+            <size key="customSize" width="375" height="125"/>
+            <connections>
+                <outlet property="dateLabel" destination="8zO-3c-zfv" id="yxu-T2-GK2"/>
+                <outlet property="descriptionLabel" destination="oJ7-ct-rmw" id="Vmf-nB-ugf"/>
+                <outlet property="readMoreButton" destination="KAO-P5-Nbu" id="Bqu-cN-RCy"/>
+                <outlet property="titleLabel" destination="j5K-Vl-c06" id="1nT-I2-2C8"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
