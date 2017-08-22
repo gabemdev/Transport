@@ -6,10 +6,10 @@ Simple map view application. Most of the views are just placeholder and no real 
 ## Screenshots
 
 ### Map View
-![MapView](https://cldup.com/lRkD8nA1EB.png)
+![MapView](https://cldup.com/3BPL6z7AI0.png)
 
 ### Route View
-![RouteView](https://cldup.com/nHpj0ZFchM.png)
+![RouteView](https://cldup.com/Kewifmre2A.png)
 
 ### Announcements
-![Announcements](https://cldup.com/HAzMfN106L.png)
+![Announcements](https://cldup.com/Cwtm0Mt1K2.png)
